@@ -116,3 +116,6 @@ K, D, size, rms = calibrate_fisheye("./calib_images", checkerboard=(9, 6), split
 img = cv2.imread("stereo_frame.jpg")
 result, new_K = undistort_image(img, K, D, balance=0.5, calib_size=size, split="left")
 ```
+
+##参考文档
+[Fisheye camera model](https://docs.opencv.org/4.13.0/db/d58/group__calib3d__fisheye.html)
