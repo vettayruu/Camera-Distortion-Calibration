@@ -117,5 +117,7 @@ img = cv2.imread("stereo_frame.jpg")
 result, new_K = undistort_image(img, K, D, balance=0.5, calib_size=size, split="left")
 ```
 
-##参考文档
+## Reference
 [Fisheye camera model](https://docs.opencv.org/4.13.0/db/d58/group__calib3d__fisheye.html)
+
+[A Generic Camera Model and Calibration Method for Conventional, Wide-Angle, and Fish-Eye Lenses](http://www.close-range.com/docs/A_GENERIC_CAMERA_MODEL_AND_CALIBRATION_METHOD_Kannala-Brandt_pdf697.pdf)
