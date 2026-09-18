@@ -84,6 +84,8 @@ python fisheye_undistort.py undistort stereo_frame.jpg --split right --params ri
 
 ## 常见问题
 
+**要特别注意畸变标定时的分辨率要与视频推流的分辨率一致。标定图片不能过少，否则会导致标定参数不准确。**
+
 **报错 `AttributeError: module 'cv2.fisheye' has no attribute 'CALIB_RECOMPUTE_EXTRINSIC'`**
 
 通常是 OpenCV 安装本身有问题（多个 opencv 包冲突，或本地文件名与 `cv2` 冲突），而不是代码问题：
